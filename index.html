@@ -9,8 +9,8 @@
         display: flex;
         justify-content: center;
         padding: 9px;
-        background-color: #45a1ff;
-        color:rgb(255, 254, 253);
+        background-color:pink;
+        color:black;
     }  
         a:link {color:green;}     
 a:visited {color:blue;}  
@@ -18,18 +18,24 @@ a:hover {color:yellow;}
 a:active {color:black;}
         .tooltip {
     position: relative;
-    display: inline-block;
+    cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    display: grid;
     border-bottom: 1px dotted black;
+    padding: 0.7em 1.8em;
+    text-transform: uppercase;
+  height: 60px;
+  width: 180px;
 }
 
 .tooltip .tooltiptext {
     visibility: hidden;
     width: 120px;
-    background-color: black;
-    color: #fff;
+    background-color: pink;
+    color: black;
     text-align: center;
     border-radius: 6px;
-    padding: 5px 0;
+    padding: 0.7em 1.8em;
 
     /* 定位 */
     position: absolute;
